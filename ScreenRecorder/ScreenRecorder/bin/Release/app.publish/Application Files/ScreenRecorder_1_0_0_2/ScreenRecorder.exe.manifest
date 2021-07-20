@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ScreenRecorder.exe" version="1.0.0.2" publicKeyToken="4bf24f3fb669fb87" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ScreenRecorder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ScreenRecorder.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Accord.dll" size="131072">
+      <assemblyIdentity name="Accord" version="3.8.0.0" publicKeyToken="FA1A88E29555CCF7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>02wiWoRBXAG8Ko6ECWWQpyBt/D02Fz48e2pioEwKM6k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Accord.Video.dll" size="40960">
+      <assemblyIdentity name="Accord.Video" version="3.8.0.0" publicKeyToken="FA1A88E29555CCF7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X+qqHUnywsg2OgpvDvQt9evvzbiYnHB9k63D652xCHQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Accord.Video.FFMPEG.x64.dll" size="148992">
+      <assemblyIdentity name="Accord.Video.FFMPEG.x64" version="3.8.0.0" publicKeyToken="FA1A88E29555CCF7" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HqbTDipL4mf8I0TQd3dJAbRPqYOWgPyAoVwj/3xgcJs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScreenRecorder.exe" size="16344">
+      <assemblyIdentity name="ScreenRecorder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IBr6W9GeB6eY/ApVN6lu4TrP/+LlsIGuLdgGlpFVUEo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Accord.dll.config" size="213">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MEnoP5t/qShagvs8d0DpwiW2ajH4BdNYKpv9NLXdjm4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ScreenRecorder.exe.config" size="191">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nZbwgbUTWhOLr0mMKl999OOCnM45RTcbMWz0YfZTgVQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-IET5HPF\EREN" issuerKeyHash="24453aa047bfe5c910ea9017339113a03fd19be8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/QnN5BsWCHk27g4BTHZD3oJtseNRtOAqYSNfUIZPFuE=</DigestValue></Reference></SignedInfo><SignatureValue>ibCFYG5pdDdJOM5EwGf2enMDluQD98qTH4A4171ZPqnk+5ctTOtTYCve5qkgiyqFImkC9Il3tFDDMDUIJgic32MPlCTpLi+1z49JPrJLy1k49v/wdtleCXEsEA5D4hpwEXcZbOQ8IkGdd1civSmiSZWtcdwjDiuvQscWYhf8Ohk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pqKsYxIIghY3yW33Mybmnb5BPupZpySX4s8Wlx3d9lG/7Ez2GaA2oLqCRHA5RMkIw2Y17TAvIqjCfkYazYsTIlcvhnuQpUqATHSYgF8MJiqVaYVfVd/pU9n+UDiy5NDI63ch7UJvT7P/el7mDL0FcyKA/NjP/Su0Nm/tesgsWkU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e1164f86505f23612ae0b451e3b16d82de43764c010eee367908161be4cd09fd" Description="" Url=""><as:assemblyIdentity name="ScreenRecorder.exe" version="1.0.0.2" publicKeyToken="4bf24f3fb669fb87" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-IET5HPF\EREN</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GVCKWac/KLL9Qre4CEleP3l0FxSn/uo0yR+iJ3d8Qjk=</DigestValue></Reference></SignedInfo><SignatureValue>GNeVVeY8I7LRGNRHM1tc/GCS3DWGFtCsBbuHzE7Dd9EXV4qJPRmHU24o8jTCTdCyQJIAVf5Xu8IaC876vqdilowNWA36xdCqLWP0MaEBEZo7VKPhMwEbWRRKQBzq1phVOVCbGfH4mem/+2K3k1IjwkP2draITfJM4iNnjaZWJsg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pqKsYxIIghY3yW33Mybmnb5BPupZpySX4s8Wlx3d9lG/7Ez2GaA2oLqCRHA5RMkIw2Y17TAvIqjCfkYazYsTIlcvhnuQpUqATHSYgF8MJiqVaYVfVd/pU9n+UDiy5NDI63ch7UJvT7P/el7mDL0FcyKA/NjP/Su0Nm/tesgsWkU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQfQhJZdctKIdA5eoft4g9nzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEkARQBUADUASABQAEYAXABFAFIARQBOMB4XDTIxMDcyMDE0MzA1NloXDTIyMDcyMDIwMzA1NlowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBJAEUAVAA1AEgAUABGAFwARQBSAEUATjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApqKsYxIIghY3yW33Mybmnb5BPupZpySX4s8Wlx3d9lG/7Ez2GaA2oLqCRHA5RMkIw2Y17TAvIqjCfkYazYsTIlcvhnuQpUqATHSYgF8MJiqVaYVfVd/pU9n+UDiy5NDI63ch7UJvT7P/el7mDL0FcyKA/NjP/Su0Nm/tesgsWkUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCgend+g4l/nc3izMrPJcu+97Jyl3DWLz9gSWuM75RrqrSsbjtSvf0yAV66D3BKou/0QS1DbKdfegejTVnjZ1GBWeeytHTaLzeGqHXxRCXJchvfJsOPwbcp3b01tc/TOgp8wiBiBFNsT1Y4LDxBkv78UXJLTBhpa64fgYuyH8pAUg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,2 +1,4 @@
 # Screen Recorder For Windows (C#)
- An application for screen recording.
+An application for recording screen.
+
+![](app.gif)
